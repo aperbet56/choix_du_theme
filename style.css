@@ -1,0 +1,69 @@
+/**** Reset ****/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**** Style général de la page ****/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+}
+
+h1,
+footer p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+.main__content {
+    flex-grow: 1;
+}
+
+.container {
+    padding: 50px 10%;
+    text-align: justify;
+}
+
+footer p {
+    font-size: 18px;
+}
+
+/* La caractéristique média prefers-color-scheme permet de détecter les préférences exprimées par l'utilisateur quant au thème à utiliser (sombre ou clair). */
+
+/* Cette valeur indique que l'utilisateur a exprimé le choix d'utiliser une interface avec une dominante claire, ou qu'il n'a pas exprimé son choix. */
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #ffffff;
+        color: #333333;
+    }
+}
+
+/* Cette valeur indique que l'utilisateur a exprimé le choix d'utiliser une interface avec une dominante sombre. */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333;
+        color: #f1f1f1;
+    }
+}
