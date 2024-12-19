@@ -6,7 +6,7 @@ Création d'un projet dans lequel l'internaute va pouvoir choisir de passer en m
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/choix_du_theme/
 
 ## Projet développé avec
 
